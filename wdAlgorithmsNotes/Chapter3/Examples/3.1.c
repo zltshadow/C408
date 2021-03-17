@@ -63,14 +63,14 @@ void insertSort(int a[maxN], int len)
     int i, j, key;
     for (i = 1; i < len; i++)
     {
-        key = arr[i];
+        key = a[i];
         j = i - 1;
-        while ((j >= 0) && (arr[j] > key))
+        while ((j >= 0) && (a[j] > key))
         {
-            arr[j + 1] = arr[j];
+            a[j + 1] = a[j];
             j--;
         }
-        arr[j + 1] = key;
+        a[j + 1] = key;
     }
     return;
 }
@@ -88,7 +88,8 @@ int main(int argc, char *argv[])
             i++;
         }
         // bubbleSort(arr, len);
-        selectSort(arr, len);
+        // selectSort(arr, len);
+        insertSort(arr, len);
         for (i = 0; i < len; i++)
         {
             printf("%d ", arr[i]);
