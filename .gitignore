@@ -51,6 +51,6 @@ Module.symvers
 Mkfile.old
 dkms.conf
 /.vscode
-tempCodeRunnerFile.c
+tempCodeRunnerFile.c*
 *.[0-9]
 *.[0-9][0-9]
